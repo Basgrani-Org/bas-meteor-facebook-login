@@ -18,4 +18,4 @@ if(Meteor.isClient){
     exports.FB_API = BasMTR.FB_API;
 }
 
-_is_init = true;
+BasMTR.FB_API_isInit = true;
