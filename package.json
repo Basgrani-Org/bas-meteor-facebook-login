@@ -1,0 +1,32 @@
+{
+  "name": "bas-meteor-facebook-login",
+  "version": "1.0.0",
+  "description": "Use native api to login with Facebook.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://Basgrani@github.com/Basgrani-Org/bas-meteor-facebook-login.git"
+  },
+  "keywords": [
+    "meteor",
+    "facebook",
+    "login",
+    "cordova"
+  ],
+  "author": "Jorge Gonzalez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Basgrani-Org/bas-meteor-facebook-login/issues"
+  },
+  "homepage": "https://github.com/Basgrani-Org/bas-meteor-facebook-logino#readme",
+  "dependencies": {
+    "bas-meteor-utils": "*",
+    "underscore": "^1.8.3",
+    "chai": "3.5.0",
+    "sinon":"1.17.4",
+    "sinon-chai": "2.8.0"
+  }
+}
