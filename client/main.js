@@ -1,12 +1,10 @@
 _ = require('underscore');
 
-// Set start point
-var _start_point = BasMTR;
-
 // FB_API
 (function (mtr) {
-    _start_point.FB_API = {};
-    var _this = function(){return _start_point.FB_API;}();
+    // Set start point
+    if(!BasMTR.FB_API){ BasMTR.FB_API = {}; }
+    var _this = function(){return BasMTR.FB_API;}();
 
     _this.login = function(options, callback) {
 
@@ -33,15 +31,17 @@ var _start_point = BasMTR;
         });
     };
 
-    // Meteor Init
-    _this.mtr_init = function() {
+    // Init only one once
+    _this.init = function() {
         //...
     };
 
     // Meteor startup
     mtr.startup(function () {
-        // Init
-        _this.mtr_init();
+        // ...
     });
+
+    // Init
+    if(!_this.is_init){_this.init();_this.is_init = true;}
 
 }( Meteor ));
