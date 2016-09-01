@@ -35,7 +35,14 @@ expect = require('chai').expect;
                 expiresAt: (+new Date()) + (1000 * options.expiresIn)
             });
             user = {
-                profile: {name: identity.name},
+                profile: {
+                    name: identity.name,
+                    memberSince: new Date(),
+                    facebookId: identity.id,
+                    firstName: identity.first_name,
+                    email: identity.email,
+                    link: identity.link
+                },
                 services: {
                     facebook: identity
                 }
