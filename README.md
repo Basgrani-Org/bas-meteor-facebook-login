@@ -15,6 +15,7 @@ npm install bas-meteor-facebook-login
 - Requirements:
 
 ```
+meteor add http
 meteor add accounts-facebook
 meteor add cordova:cordova-plugin-facebook4@https://github.com/Basgrani-Org/cordova-plugin-facebook4.git#ee8aab56ee6c1f822dcab9ede1db1944100935b4
 ```

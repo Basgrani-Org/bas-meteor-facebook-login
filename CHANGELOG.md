@@ -1,5 +1,10 @@
 ## CHANGELOG
 
+### v1.0.4 (Sept 07, 2016)
+
+**Updates**
+- doc
+
 ### v1.0.3 (Sept 01, 2016)
 
 **Updates**
