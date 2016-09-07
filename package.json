@@ -1,6 +1,6 @@
 {
   "name": "bas-meteor-facebook-login",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Use native api to login with Facebook.",
   "main": "index.js",
   "scripts": {
