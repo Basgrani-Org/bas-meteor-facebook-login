@@ -1,4 +1,3 @@
-HTTP   = require('meteor/http');
 _      = require('underscore');
 expect = require('chai').expect;
 
