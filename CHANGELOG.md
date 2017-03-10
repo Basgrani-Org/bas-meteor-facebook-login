@@ -1,5 +1,10 @@
 ## CHANGELOG
 
+### v1.2.0 (Mar 10, 2017)
+
+**New**
+- Rewrite all package to es6 & Meteor 1.4.3
+
 ### v1.0.5 (Sept 07, 2016)
 
 **Fixes**

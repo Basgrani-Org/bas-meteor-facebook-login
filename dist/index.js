@@ -1,14 +1,24 @@
+'use strict';
+
 require('bas-meteor-utils');
+
+require('./init');
 
 require('./lib');
 
 // Is Server
-if(Meteor.isServer){
+
+
+// Import Init
+if (Meteor.isServer) {
     require('./server');
 }
 
 // Is Client
-if(Meteor.isClient){
+
+
+// Import libs
+if (Meteor.isClient) {
     require('./client');
     exports.FB_API = BasMTR.FB_API;
 }

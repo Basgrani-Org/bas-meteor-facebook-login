@@ -2,7 +2,7 @@
   "name": "bas-meteor-facebook-login",
   "version": "1.0.5",
   "description": "Use native api to login with Facebook.",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
