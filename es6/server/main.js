@@ -1,4 +1,4 @@
-import _ from 'underscore';
+import _ from "underscore";
 import chai from 'chai';
 let expect = chai.expect;
 
@@ -56,30 +56,30 @@ const FB_API_Login_Handler_ = ((mtr) => {
             expect(options).to.have.property("userID").that.is.a("string");
 
             let user = mtr.users.findOne({
-                "services.facebook.id": options.userID
+                "services.facebook.id": options.userID,
             });
 
             if (!user) {
                 let identity = FB_API_Login_Handler_.getIdentity(options.accessToken);
                 _.extend(identity, {
                     accessToken: options.accessToken,
-                    expiresAt  : (+new Date()) + (1000 * options.expiresIn)
+                    expiresAt  : (+new Date()) + (1000 * options.expiresIn),
                 });
                 let _options = {
                     profile: {
-                        name: identity.first_name + ' ' + identity.last_name
-                    }
+                        name: identity.first_name + ' ' + identity.last_name,
+                    },
                 };
                 user         = {
                     services: {
-                        facebook: identity
-                    }
+                        facebook: identity,
+                    },
                 };
                 user._id     = Accounts.insertUserDoc(_options, user);
             }
 
             return {
-                userId: user._id
+                userId: user._id,
             };
         }
 
@@ -90,8 +90,8 @@ const FB_API_Login_Handler_ = ((mtr) => {
                 return HTTP.get(_apiUri, {
                     params: {
                         access_token: accessToken,
-                        fields      : _fields.join(",")
-                    }
+                        fields      : _fields.join(","),
+                    },
                 }).data;
             } catch (ex) {
                 let err      = new Error("Failed to fetch identity from Facebook. " + ex.message);

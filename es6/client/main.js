@@ -49,7 +49,7 @@ const FB_API_ = ((mtr) => {
             if (!callback && typeof options === "function") {
                 callback = options;
                 options  = {
-                    "requestPermissions": ["public_profile", "email", "user_friends"]
+                    "requestPermissions": ["public_profile", "email", "user_friends"],
                 };
             }
 
