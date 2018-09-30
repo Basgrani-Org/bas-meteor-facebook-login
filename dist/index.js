@@ -11,7 +11,7 @@ require('./lib');
 
 // Import Init
 if (Meteor.isServer) {
-    require('./server');
+  require('./server');
 }
 
 // Is Client
@@ -19,6 +19,6 @@ if (Meteor.isServer) {
 
 // Import libs
 if (Meteor.isClient) {
-    require('./client');
-    exports.FB_API = BasMTR.FB_API;
+  require('./client');
+  exports.FB_API = BasMTR.FB_API;
 }
